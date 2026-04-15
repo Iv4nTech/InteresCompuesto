@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Interés Compuesto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="{{ url_for('static', filename='chart.min.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Interés Compuesto</h1>
+            <p>Descubre el poder del efecto bola de nieve en tus inversiones.</p>
+        </header>
+
+        <main>
+            <div id="error-box" class="error-message"></div>
+            <div class="calculator-card">
+                <form id="calculator-form">
+                    <div class="input-group">
+                        <label for="capital">Capital Inicial ($)</label>
+                        <input type="number" id="capital" name="capital" required min="0" step="0.01"
+                            placeholder="Ej. 1000">
+                    </div>
+                    <div class="input-group">
+                        <label for="rate">Tasa de Interés Anual (%)</label>
+                        <input type="number" id="rate" name="rate" required min="0" step="0.01" placeholder="Ej. 5">
+                    </div>
+                    <div class="input-group">
+                        <label for="compound_frequency">Frecuencia de Capitalización</label>
+                        <select id="compound_frequency" name="compound_frequency" required class="form-select">
+                            <option value="1">Anual</option>
+                            <option value="2">Semestral</option>
+                            <option value="4">Trimestral</option>
+                            <option value="12" selected>Mensual</option>
+                            <option value="365">Diaria</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="time_value">Duración</label>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <input type="number" id="time_value" name="time_value" required min="0.1" step="0.1"
+                                placeholder="Ej. 5" style="flex: 2;">
+                            <select id="time_unit" name="time_unit" required class="form-select" style="flex: 1;">
+                                <option value="years" selected>Años</option>
+                                <option value="months">Meses</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-calculate" style="grid-column: 1 / -1;">Calcular</button>
+                </form>
+            </div>
+
+            <div class="results-container" id="results-container" style="display: none;">
+                <div class="summary">
+                    <h2>Capital Final: <span id="final-amount">$0.00</span></h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="compoundChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
