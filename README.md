@@ -1,4 +1,4 @@
-# 📈 Calculadora de Interés Compuesto
+# Calculadora de Interés Compuesto
 
 Una aplicación web moderna, minimalista y profesional para visualizar el crecimiento de tus inversiones a lo largo del tiempo utilizando el poder del interés compuesto.
 
@@ -7,7 +7,7 @@ Una aplicación web moderna, minimalista y profesional para visualizar el crecim
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
 
-## ✨ Características
+## Características
 
 - **Diseño Premium**: Interfaz inspirada en los estándares de Apple y Stripe (limpia, off-white y tipografía sans-serif).
 - **Flexibilidad Temporal**: Calcula proyecciones en días, meses o años.
@@ -16,14 +16,14 @@ Una aplicación web moderna, minimalista y profesional para visualizar el crecim
 - **Validación Inteligente**: Sistema que previene errores de coherencia temporal.
 - **Responsive**: Totalmente optimizado para dispositivos móviles y escritorio.
 
-## 🚀 Tecnologías
+## Tecnologías
 
 - **Backend**: Python con Flask.
 - **Frontend**: HTML5, CSS3 (Vanilla) y JavaScript (Vanilla).
 - **Gráficos**: Chart.js vía CDN.
 - **Fuentes**: Inter (Google Fonts).
 
-## 🛠️ Instalación y Uso
+## Instalación y Uso
 
 1. **Clonar el repositorio**:
    ```bash
@@ -50,7 +50,7 @@ Una aplicación web moderna, minimalista y profesional para visualizar el crecim
 5. **Abrir en el navegador**:
    Ve a `http://127.0.0.1:5000`
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 .
@@ -63,9 +63,6 @@ Una aplicación web moderna, minimalista y profesional para visualizar el crecim
 └── requirements.txt    # Dependencias del proyecto
 ```
 
-## 📝 Licencia
+## Licencia
 
 Este proyecto es de código abierto y está disponible bajo la licencia MIT.
-
----
-Creado con ❤️ para entusiastas de las finanzas y el desarrollo web.
