@@ -9,7 +9,7 @@ Una aplicación web moderna, minimalista y profesional para visualizar el crecim
 
 ## Características
 
-- **Diseño Premium**: Interfaz inspirada en los estándares de Apple y Stripe (limpia, off-white y tipografía sans-serif).
+- **Diseño Premium**: Interfaz minimalista y moderna con estética limpia (tonos off-white y tipografía sans-serif de alta legibilidad).
 - **Flexibilidad Temporal**: Calcula proyecciones en días, meses o años.
 - **Frecuencia de Capitalización**: Configura si el interés se reinvierte de forma diaria, mensual, trimestral, semestral o anual.
 - **Gráficos Dinámicos**: Visualización de área interactiva mediante **Chart.js**.
