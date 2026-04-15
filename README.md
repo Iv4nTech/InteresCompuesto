@@ -20,7 +20,7 @@ Una aplicación web moderna, minimalista y profesional para visualizar el crecim
 
 - **Backend**: Python con Flask.
 - **Frontend**: HTML5, CSS3 (Vanilla) y JavaScript (Vanilla).
-- **Gráficos**: Chart.js vía CDN.
+- **Gráficos**: Chart.js.
 - **Fuentes**: Inter (Google Fonts).
 
 ## Instalación y Uso
